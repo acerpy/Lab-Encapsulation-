@@ -11,6 +11,7 @@ class Account:
     
     def change_pin(self, old_pin, new_pin):
         if(old_pin == self.__pin):
+            self.__pin = new_pin
             return "Pin Changed"
         return "Wrong pin"
 
